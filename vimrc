@@ -1,11 +1,3 @@
-" File              : /Users/haiqiang/.vimrc
-" Author            : HaiChiang <dachiang_fat@qq.com>
-" Date              : 09.01.2018
-" Last Modified Date: 11.01.2018
-" Last Modified By  : HaiChiang <dachiang_fat@qq.com>
-" File              : /Users/haiqiang/.vimrc
-" Date              : 09.01.2018
-" Last Modified Date: 09.01.2018
 set nu
 set ts=4
 set expandtab
@@ -36,21 +28,8 @@ Plug 'ervandew/supertab'
 
 call plug#end()
 
-" Nerd Tree
-map <F3> :NERDTreeToggle<CR>
 
-" Atuo Header
-let g:header_field_author = 'HaiChiang'
-let g:header_field_author_email = 'dachiang_fat@qq.com'
-map <F4> :AddHeader<CR>
-
-" Auto Save
-let g:auto_save = 1  " enable AutoSave on Vim startup
-
-" Mul Cursors
-
-
-" Pymode
+" PyMod
 let g:pymode = 1
 let g:pymode_options_colorcolumn = 0
 setlocal wrap
@@ -61,6 +40,8 @@ set foldlevel=1
 set foldclose=all
 set completeopt=menu
 
+" NerdTree
+map <F3> :NERDTreeToggle<CR>
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = 'context'

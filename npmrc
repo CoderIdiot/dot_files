@@ -1,7 +1,1 @@
-prefix=/Users/haiqiang/npm-global
-registry=https://registry.npm.taobao.org/
-//registry.npm.taobao.org/:_password="emhxNjUyMTQ0Mg=="
-//registry.npm.taobao.org/:username=rq8686
-//registry.npm.taobao.org/:email=rq8686@qq.com
-//registry.npm.taobao.org/:always-auth=false
-//registry.npmjs.org/:_authToken=0bdd78d1-264a-44c9-9b1a-cc3bf5094176
+registry = https://registry.npm.taobao.org

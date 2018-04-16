@@ -1,19 +1,24 @@
 #!/bin/zsh
-# File              : /Users/haiqiang/.zshrc
-# Author            : HaiChiang <dachiang_fat@qq.com>
-# Date              : 09.01.2018
-# Last Modified Date: 09.01.2018
-# Last Modified By  : HaiChiang <dachiang_fat@qq.com>
+# File              : .zshrc
+# Date              : 16.04.2018
+# Last Modified Date: 16.04.2018
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/haiqiang/.oh-my-zsh
+export ZSH=/home/haichiang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -55,9 +60,11 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse pyenv)
+# Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pyenv npm docker python)
+plugins=(
+  git
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,42 +96,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias emacs="emacs -nw"
-export PATH=${PATH}:/Users/haiqiang/Android-SDK/platform-tools
-
-###-tns-completion-start-###
-if [ -f /Users/haiqiang/.tnsrc ]; then 
-    source /Users/haiqiang/.tnsrc 
-fi
-###-tns-completion-end-###
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-
-
-# npm global
-export PATH=${PATH}:/Users/haiqiang/npm-global/bin
-
-# pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-alias py2='pyenv activate py27'
-alias py3='pyenv activate py36'
-alias pyexit='pyenv deactivate'
-alias pycons='jupyter qtconsole &'
-
-# asciidoc
-PATH="/Users/haiqiang/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/haiqiang/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/haiqiang/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/haiqiang/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/haiqiang/perl5"; export PERL_MM_OPT;
-
-# java
-alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
-alias j9="export JAVA_HOME=`/usr/libexec/java_home -v 9`; java -version"
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
-# erl
-export PATH=${PATH}:/usr/local/bin
