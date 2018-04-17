@@ -1,7 +1,16 @@
 # dot_files
-My mac dot files: vim zshrc ... etc
+
+My dot files: vim zshrc ... etc
+
+# prerequisite
+git zsh vim curl
 
 # Update
+
 ./up.sh
+
+# Install
+
+./in.sh
 
 

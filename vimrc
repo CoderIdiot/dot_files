@@ -1,3 +1,9 @@
+" File              : .vimrc
+" Date              : 17.04.2018
+" Last Modified Date: 17.04.2018
+" File              : .vimrc
+" Date              : 17.04.2018
+" Last Modified Date: 17.04.2018
 set nu
 set ts=4
 set expandtab
@@ -28,6 +34,10 @@ Plug 'ervandew/supertab'
 
 call plug#end()
 
+" Vim Header
+let g:header_field_modified_timestamp = 0
+let g:header_field_author = 'HaiChiang'
+map <F4> :AddHeader<CR>
 
 " PyMod
 let g:pymode = 1
