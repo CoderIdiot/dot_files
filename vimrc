@@ -57,7 +57,8 @@ let g:pymode_motion = 1
 let g:pymode_syntax = 1
 set completeopt=menu
 let g:pymode_folding = 0
-nmap z zo
+nmap f zo
+nmap r zc
 
 
 " NerdTree
