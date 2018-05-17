@@ -1,6 +1,10 @@
-" File              : .vimrc
-" Date              : 17.04.2018
-" Last Modified Date: 17.04.2018
+" File            : /home/haichiang/.vimrc
+" Author          : HaiChiang
+" Date            : 17.05.2018
+" Last Modified By: HaiChiang
+" File            : /home/haichiang/.vimrc
+" Date            : 17.04.2018
+" Last Modified Date            : 17.04.2018
 " File              : .vimrc
 " Date              : 17.04.2018
 " Last Modified Date: 17.04.2018
@@ -10,6 +14,11 @@ set expandtab
 set wrap
 set textwidth=80
 set mouse=a
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
 
 filetype plugin on
 set splitbelow
@@ -46,9 +55,10 @@ setlocal wrap
 setlocal textwidth=80
 let g:pymode_motion = 1
 let g:pymode_syntax = 1
-set foldlevel=1
-set foldclose=all
 set completeopt=menu
+let g:pymode_folding = 0
+nmap z zo
+
 
 " NerdTree
 map <F3> :NERDTreeToggle<CR>
