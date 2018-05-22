@@ -1,12 +1,13 @@
 #!/bin/zsh
-# File              : .zshrc
-# Date              : 16.04.2018
-# Last Modified Date: 16.04.2018
+# File            : /Users/haiqiang/.zshrc
+# Author          : HaiChiang
+# Date            : 22.05.2018
+# Last Modified By: HaiChiang
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/haichiang/.oh-my-zsh
+export ZSH=/Users/haiqiang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -96,3 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+ export PATH=~/npm-global/bin:$PATH
+
