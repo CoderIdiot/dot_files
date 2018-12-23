@@ -99,5 +99,33 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
- export PATH=~/npm-global/bin:$PATH
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export PATH=~/npm-global/bin:$PATH
 
+case "$(uname -s)" in
+
+   Darwin)
+     echo 'Mac OS X'
+     PATH=/Users/haiqiang/Library/Python/3.6/bin:$PATH
+     ;;
+
+   Linux)
+     echo 'Linux'
+     ;;
+
+   CYGWIN*|MINGW32*|MSYS*)
+     echo 'MS Windows'
+     ;;
+
+   # Add here more strings to compare
+   # See correspondence table at the bottom of this answer
+
+   *)
+     echo 'other OS'
+     ;;
+esac
+
+export PIPENV_VENV_IN_PROJECT=1
+
+alias docker-ps='docker ps --format "table {{.Names}}\t\t{{.Status}}\t\tNetwork:{{.Networks}}\t\t{{.Ports}}"'
